@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahria University – Lahore Campus</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    /* Lahore campus - green accent */
+    :root {
+      --navy: #1a4731;
+      --navy-dark: #0d2d1e;
+      --navy-light: #2a6647;
+      --gold: #c49a00;
+      --gold-light: #e0b810;
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-bar-links">
+      <a href="#">Student Portal</a>
+      <a href="#">LMS</a>
+      <a href="#">Library</a>
+      <a href="#">Alumni</a>
+      <a href="#">BULC</a>
+    </div>
+    <div class="top-bar-contact">
+      <span>📞 042-99233404</span>
+      <span>✉ info.bulc@bahria.edu.pk</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo-wrap">
+      <div class="logo-emblem">BU</div>
+      <div>
+        <div class="logo-text-main">Bahria University</div>
+        <div class="logo-text-sub">Lahore Campus</div>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="#about" class="active">About</a>
+      <a href="#departments">Academics</a>
+      <a href="#">Admissions</a>
+      <a href="#">Research</a>
+      <a href="#">Student Life</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#about">About</a>
+  <a href="#departments">Academics</a>
+  <a href="#">Admissions</a>
+  <a href="#">Research</a>
+  <a href="#">Student Life</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO SLIDER -->
+<section class="hero">
+  <div class="hero-slides">
+
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1613896527026-f195d5c818ed?w=1400&q=80" alt="Lahore Campus" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Lahore Campus · Johar Town · 47-C, Civic Center</span>
+        <h1 class="hero-title">Academic Excellence in the Heart of Lahore</h1>
+        <p class="hero-subtitle">Bahria University Lahore Campus brings world-class education to Pakistan's cultural capital, producing graduates who lead with knowledge, integrity, and innovation.</p>
+        <div class="hero-cta">
+          <a href="#" class="btn-primary">Apply Now</a>
+          <a href="#about" class="btn-outline">Explore Campus</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1400&q=80" alt="Students Lahore" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Fall 2026 – Admissions Now Open</span>
+        <h1 class="hero-title">Invest in Your Future – Study at BULC</h1>
+        <p class="hero-subtitle">From Engineering to Business, Computing to Social Sciences — our programs are crafted to match the demands of the modern job market.</p>
+        <div class="hero-cta">
+          <a href="#" class="btn-primary">View Programs</a>
+          <a href="#" class="btn-outline">Fee Structure</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1400&q=80" alt="Research Lahore" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Culture, Community & Campus Life</span>
+        <h1 class="hero-title">Thrive Beyond the Classroom</h1>
+        <p class="hero-subtitle">Experience vibrant student life with exceptional facilities, active societies, sports, and a supportive community at Bahria University Lahore.</p>
+        <div class="hero-cta">
+          <a href="#" class="btn-primary">Student Life</a>
+          <a href="#" class="btn-outline">Campus Tour</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <button class="slider-arrow prev" id="prevSlide">&#8249;</button>
+  <button class="slider-arrow next" id="nextSlide">&#8250;</button>
+  <div class="slider-dots">
+    <button class="dot active"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num" data-target="7000" data-suffix="+">0</span>
+      <div class="stat-label">Students Enrolled</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="45" data-suffix="+">0</span>
+      <div class="stat-label">Programs Offered</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="180" data-suffix="+">0</span>
+      <div class="stat-label">Faculty Members</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="20" data-suffix=" Yrs">0</span>
+      <div class="stat-label">In Lahore</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="92" data-suffix="%">0</span>
+      <div class="stat-label">Graduate Employment</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK LINKS -->
+<section class="section">
+  <div class="container">
+    <div class="quick-links-grid fade-in">
+      <a href="#" class="quick-link-card">
+        <div class="ql-icon">🎓</div>
+        <div class="ql-title">Admissions</div>
+        <div class="ql-desc">Apply online for Fall 2026 programs</div>
+      </a>
+      <a href="#" class="quick-link-card">
+        <div class="ql-icon">📅</div>
+        <div class="ql-title">Academic Calendar</div>
+        <div class="ql-desc">Important dates, holidays and exam schedules</div>
+      </a>
+      <a href="#" class="quick-link-card">
+        <div class="ql-icon">💰</div>
+        <div class="ql-title">Fee Structure</div>
+        <div class="ql-desc">Tuition and semester fee details for all programs</div>
+      </a>
+      <a href="#" class="quick-link-card">
+        <div class="ql-icon">🎭</div>
+        <div class="ql-title">Student Societies</div>
+        <div class="ql-desc">Clubs, societies, and extracurricular activities</div>
+      </a>
+      <a href="#" class="quick-link-card">
+        <div class="ql-icon">🏆</div>
+        <div class="ql-title">Scholarships</div>
+        <div class="ql-desc">Merit-based and need-based financial support</div>
+      </a>
+      <a href="#" class="quick-link-card">
+        <div class="ql-icon">🤝</div>
+        <div class="ql-title">Career Center</div>
+        <div class="ql-desc">Internship placements and career counselling</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section section-alt" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-in">
+        <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800&q=80" alt="Lahore Campus Building" />
+        <div class="about-img-badge">
+          <strong>BULC</strong>
+          <span>Lahore</span>
+        </div>
+      </div>
+      <div class="about-text fade-in">
+        <div class="section-tag">About Lahore Campus</div>
+        <h2>Where Tradition Meets Innovation in Lahore</h2>
+        <p>Bahria University Lahore Campus (BULC), located at 47-C, Civic Center, Johar Town, Lahore, is a premier academic institution that blends Bahria University's tradition of excellence with the intellectual and cultural richness of Pakistan's cultural capital.</p>
+        <p>The campus offers a stimulating environment for learning with modern classrooms, dedicated research labs, a well-stocked library, and a vibrant student life that includes sports, cultural events, and professional development activities.</p>
+        <ul class="about-checklist">
+          <li>Strategically located in Johar Town, Lahore</li>
+          <li>Modern infrastructure and academic facilities</li>
+          <li>Strong placement and career support services</li>
+          <li>Active student councils and cultural societies</li>
+          <li>Transport facility for students across Lahore</li>
+        </ul>
+        <a href="#" class="btn-primary">Discover BULC</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section class="section" id="departments">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Academics</div>
+      <h2 class="section-title">Departments at Lahore Campus</h2>
+      <div class="section-divider"></div>
+      <p class="section-desc">Comprehensive undergraduate and postgraduate programs taught by qualified faculty with real-world experience.</p>
+    </div>
+    <div class="dept-grid fade-in">
+      <div class="dept-card">
+        <div class="dept-card-img" style="background:#1a4731;">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=75" alt="" />
+          <div class="dept-card-img-label"><div class="dept-icon">💻</div></div>
+        </div>
+        <div class="dept-card-body">
+          <div class="dept-name">Computer Science & IT</div>
+          <div class="dept-desc">BS CS, BS IT, BS SE, MS Computer Science programs with industry-aligned curriculum.</div>
+          <a href="#" class="dept-link">View Programs →</a>
+        </div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-img" style="background:#2a6647;">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=75" alt="" />
+          <div class="dept-card-img-label"><div class="dept-icon">📊</div></div>
+        </div>
+        <div class="dept-card-body">
+          <div class="dept-name">Management Sciences</div>
+          <div class="dept-desc">BBA, MBA, and MS programs with specializations in Finance, HRM, and Marketing.</div>
+          <a href="#" class="dept-link">View Programs →</a>
+        </div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-img" style="background:#0d2d1e;">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=75" alt="" />
+          <div class="dept-card-img-label"><div class="dept-icon">⚙️</div></div>
+        </div>
+        <div class="dept-card-body">
+          <div class="dept-name">Engineering</div>
+          <div class="dept-desc">Electrical Engineering and Civil Engineering programs at BS and MS levels.</div>
+          <a href="#" class="dept-link">View Programs →</a>
+        </div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-img" style="background:#1a4731;">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=75" alt="" />
+          <div class="dept-card-img-label"><div class="dept-icon">🎭</div></div>
+        </div>
+        <div class="dept-card-body">
+          <div class="dept-name">Social Sciences & Law</div>
+          <div class="dept-desc">BS Psychology, LLB, and BS Mass Communication programs for social science aspirants.</div>
+          <a href="#" class="dept-link">View Programs →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPUS INFO -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Contact Us</div>
+      <h2 class="section-title">Lahore Campus Information</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="info-cards fade-in">
+      <div class="info-card">
+        <div class="info-card-icon">📍</div>
+        <div class="info-card-title">Address</div>
+        <div class="info-card-value">47-C, Civic Center, Johar Town, Lahore, Pakistan</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">📞</div>
+        <div class="info-card-title">Phone</div>
+        <div class="info-card-value">042-99233404</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">✉️</div>
+        <div class="info-card-title">Email</div>
+        <div class="info-card-value">info.bulc@bahria.edu.pk</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">🕐</div>
+        <div class="info-card-title">Office Hours</div>
+        <div class="info-card-value">Mon – Fri: 8:00 AM – 5:00 PM<br>Sat: 9:00 AM – 1:00 PM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Latest News</div>
+      <h2 class="section-title">News & Announcements</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="news-grid fade-in">
+      <div class="news-card">
+        <div class="news-card-img">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=500&q=75" alt="" />
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">May 2026</div>
+          <div class="news-title">Fall 2026 Admissions Open at Lahore Campus</div>
+          <div class="news-excerpt">BULC is now accepting applications for all undergraduate and postgraduate programs for the Fall 2026 semester. Last date: June 30.</div>
+          <a href="#" class="news-more">Read More →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-img">
+          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=500&q=75" alt="" />
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">April 2026</div>
+          <div class="news-title">Tech Fest Lahore 2026 – Innovation Showcased</div>
+          <div class="news-excerpt">CS and Engineering students showcased their final year projects at the annual Tech Fest, drawing industry judges from leading tech firms.</div>
+          <a href="#" class="news-more">Read More →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-img">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&q=75" alt="" />
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">March 2026</div>
+          <div class="news-title">BULC Annual Convocation Ceremony 2026</div>
+          <div class="news-excerpt">Graduating students of the 2026 batch received their degrees in a dignified convocation ceremony at Lahore Campus.</div>
+          <a href="#" class="news-more">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="logo-emblem" style="width:48px;height:48px;font-size:16px;">BU</div>
+        <div>
+          <div class="logo-text-main">Bahria University</div>
+          <div class="logo-text-sub">Lahore Campus (BULC)</div>
+        </div>
+      </div>
+      <p class="footer-desc">Bahria University Lahore Campus is committed to producing graduates with strong academic foundations, ethical values, and practical skills to contribute to Pakistan's development and global progress.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Academics</h4>
+      <ul>
+        <li><a href="#">Programs Offered</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Academic Calendar</a></li>
+        <li><a href="#">Fee Structure</a></li>
+        <li><a href="#">Examinations</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Admissions</h4>
+      <ul>
+        <li><a href="#">How to Apply</a></li>
+        <li><a href="#">Entry Test</a></li>
+        <li><a href="#">Merit Lists</a></li>
+        <li><a href="#">Scholarships</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Student Portal</a></li>
+        <li><a href="#">LMS</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Alumni Network</a></li>
+        <li><a href="#">Office Directory</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Bahria University. All Rights Reserved.</span>
+    <span>47-C, Civic Center, Johar Town, Lahore | 042-99233404</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
